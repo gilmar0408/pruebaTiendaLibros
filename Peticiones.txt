@@ -1,0 +1,185 @@
+
+Modificar un libro
+peticion: 
+
+PUT
+
+endpoint :
+
+
+http://localhost:8080/api/libro/modificar/4/gilmar0408@hotmail.com
+
+objeto : 
+
+
+
+{
+	"nombre" : "Calculo integral",
+	"autor"  : "Diego Gracia",
+	"categoria" : {
+        "id_categoria" : 2,
+        "descripcion"  : "Ingenieria",
+        "tarifa"  : 5500
+    },
+    "cantidad_disponible" : 5,
+    "cantidad_reservada"  : 0
+}
+
+
+
+Alquilar un libro
+petición:
+
+PUT
+
+Endpoint:
+
+http://localhost:8080/api/libro/alquilar
+
+objeto:
+
+{
+	"correo" : "carlos102@gmail.com",
+    "informacion": 
+    [
+        {
+            "id_libro": 1,
+            "cantidad": 3
+        },
+        {
+            "id_libro": 2,
+            "cantidad": 2
+        }
+            ],
+
+    "fechaPrestamo": "2020-04-11",
+    "fechaDevolucion": "2020-04-19"
+}
+
+
+
+Actualizar una tarifa
+
+Petición:
+
+PUT
+
+Endpoint:
+
+http://localhost:8080/api/categoria/actualizar/6/gilmar0408@hotmail.com/8000
+
+
+objeto:
+
+N/A
+
+
+
+Crear una categoría:
+
+
+Petición:
+
+POST
+
+Endpoint:
+
+http://localhost:8080/api/categoria/crear
+
+
+Objeto:
+
+{
+    "descripcion" : "Psicologia",
+    "tarifa"  : 7500
+}
+
+
+Registrar un cliente:
+
+
+Petición:
+
+POST
+
+Endpoint:
+
+http://localhost:8080/api/cliente/registrar
+
+
+Objeto:
+
+{
+	"cedula" : 1032496783,
+    "correo_electronico" : {
+        "correo_electronico" : "andres102@gmail.com",
+        "contrasena" : 2673,
+        "contrasena_encriptada" : "$2y$12$ICNmJ/jgQIrmQhxu3DCznuaiAuzUg/wA0PT6SQ5IK6kNF9wsTZacm ",
+        "rol" : {
+            "id_rol" : 2,
+            "descripcion" : "Cliente"
+        }
+    },
+	"nombre"  : "Andres ",
+    "apellidos" : "Lopez ",
+    "telefono"  : "3126333456",
+    "direccion" :  "cll 170 n 27 - 80",
+    "edad"      : 27
+}
+
+
+Eliminar un libro:
+
+Petición:
+
+DELETE
+
+Endpoint:
+
+http://localhost:8080/api/libro/eliminar/3/gilmar0408@hotmail.com
+
+Objeto:
+
+N/A
+
+
+Listar todos los libros:
+
+Petición:
+
+GET
+
+Endpoint:
+
+http://localhost:8080/api/libro/listar
+
+Objeto:
+
+N/A
+
+
+
+Crear un Libro:
+
+Petición:
+
+POST
+
+Endpoint:
+
+http://localhost:8080/api/libro/crear/gilmar0408@hotmail.com
+
+
+Objeto:
+
+{
+	"nombre" : "Calculo integral",
+	"autor"  : "Diego Gracia",
+	"categoria" : {
+        "id_categoria" : 2,
+        "descripcion"  : "Ingenieria",
+        "tarifa"  : 5500
+    },
+    "cantidad_disponible" : 12,
+    "cantidad_reservada"  : 0
+}

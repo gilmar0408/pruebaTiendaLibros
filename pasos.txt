@@ -1,0 +1,17 @@
+nombre conexión
+db_libreria
+
+nombre base de datos
+db_tienda_libros
+
+1. Crear los roles por defecto en la tabla rol
+2. Crear usuario administrador por defecto en la tabla usuario
+3. Registrar varios o un solo cliente desde postman
+4. Crear categorias desde postman 
+5. Crear libros desde postman
+6. Crear uno o varios alquileres de libros desde postman
+7. Eliminar un libro desde postman
+8. Modificar un libro desde postman
+9. Listar los libros existentes desde postman
+10. Actualizar tarifas en la tabla categorias desde postman
+ 
